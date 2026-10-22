@@ -277,6 +277,14 @@ rules:
   - update
   - watch
 - apiGroups:
+  - cluster.open-cluster-management.io
+  resources:
+  - clusterclaims
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
   - components.platform.opendatahub.io
   resources:
   - aigateways
@@ -610,6 +618,14 @@ rules:
   - operator.authorino.kuadrant.io
   resources:
   - authorinos
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - operator.open-cluster-management.io
+  resources:
+  - klusterlets
   verbs:
   - get
   - list
